@@ -16,7 +16,7 @@ const (
 	appName         string = "urdudict"
 	appUsage        string = "Urdu dict in your terminal"
 	appVersion             = "v0.5.0"
-	rekhta                 = "https://www.rekhta.org/urdudictionary/?lang=1&keyword="
+	rekhta                 = "https://rekhtadictionary.com/search?keyword="
 	resultsTemplate string = `{{ if .Meanings }}Found meaning
 ~~~~~~~~~~~~~{{range $key, $value := .Meanings }}
 {{ $value.Word }} - {{ $value.Meaning }} {{end}}{{ else }}No meanings found{{ end }}{{ if .WordSuggestions }}
